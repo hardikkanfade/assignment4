@@ -2,62 +2,67 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Weather Dashboard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Analytics Dashboard</title>
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav class="top-nav">
-        <div class="nav-left">🌤 WeatherLab</div>
-        <div class="nav-right">
-            <span class="nav-item">Dashboard</span>
-            <span class="nav-item">Forecast</span>
-            <span class="nav-item">Analytics</span>
-        </div>
-    </nav>
+    <h1>Indian Pharmacy Analytics Dashboard</h1>
+    <p class="subtitle">Interactive Data Visualization using FusionCharts | Sample Indian Dataset</p>
 
-    <div class="container">
-
-        <header>
-            <h1>Weather Dashboard</h1>
-            <p class="subtitle">Weather Forecast & Atmospheric Data Analysis</p>
-        </header>
-
-        <!-- Search -->
-        <div class="search-box">
-            <div class="input-row">
-                <div class="input-group">
-                    <label>City</label>
-                    <input type="text" id="cityInput" value="London">
-                </div>
-                <div class="input-group">
-                    <label>Days</label>
-                    <input type="number" id="daysInput" min="1" max="7" value="5">
-                </div>
-                <button onclick="getWeather()">Search</button>
-            </div>
-        </div>
-
-        <!-- Results -->
-        <div id="results">
-            <div class="loading">
-                <div class="spinner"></div>
-                <p>Loading...</p>
-            </div>
-        </div>
+    <div class="file-loader">
+        <input type="file" id="jsonFile" accept=".json">
+        <button onclick="window.loadJSON()">Load Dataset</button>
+        <p class="info">Or place your JSON file named 'indian_pharmacies.json' in the same folder and reload the page</p>
     </div>
 
-    <footer class="footer">
-        Weather Dashboard • Data Source: OpenWeather API
-    </footer>
+    <div id="loading" style="display: none; text-align: center; padding: 20px;">
+        <p>Loading data...</p>
+    </div>
 
-    <script src="script.js"></script>
+    <div id="error" style="display: none; text-align: center; padding: 20px; color: red;">
+        <p id="errorMessage"></p>
+    </div>
+
+    <div class="grid" id="dashboardGrid" style="display: none;">
+
+        <div class="card">
+            <h3>Category Distribution</h3>
+            <canvas id="categoryChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Claimed vs Unclaimed</h3>
+            <canvas id="claimedChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Rating Distribution</h3>
+            <canvas id="ratingChart"></canvas>
+        </div>
+
+        <div class="card">
+            <h3>Reviews Count</h3>
+            <canvas id="reviewChart"></canvas>
+        </div>
+
+        <div class="card full">
+            <h3>Customer Activity by Hour</h3>
+            <canvas id="ratingsChart"></canvas>
+        </div>
+
+        <div class="card full">
+            <h3>Service Availability</h3>
+            <canvas id="serviceChart"></canvas>
+        </div>
+
+    </div>
+
 </body>
 </html>

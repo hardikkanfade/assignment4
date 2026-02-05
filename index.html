@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="top-nav">
+        <div class="nav-left">🌤 WeatherLab</div>
+        <div class="nav-right">
+            <span class="nav-item">Dashboard</span>
+            <span class="nav-item">Forecast</span>
+            <span class="nav-item">Analytics</span>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <header>
+            <h1>Weather Dashboard</h1>
+            <p class="subtitle">Weather Forecast & Atmospheric Data Analysis</p>
+        </header>
+
+        <!-- Search -->
+        <div class="search-box">
+            <div class="input-row">
+                <div class="input-group">
+                    <label>City</label>
+                    <input type="text" id="cityInput" value="London">
+                </div>
+                <div class="input-group">
+                    <label>Days</label>
+                    <input type="number" id="daysInput" min="1" max="7" value="5">
+                </div>
+                <button onclick="getWeather()">Search</button>
+            </div>
+        </div>
+
+        <!-- Results -->
+        <div id="results">
+            <div class="loading">
+                <div class="spinner"></div>
+                <p>Loading...</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        Weather Dashboard • Data Source: OpenWeather API
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

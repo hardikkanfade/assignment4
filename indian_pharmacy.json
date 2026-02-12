@@ -1,0 +1,868 @@
+[
+  {
+    "title": "Apollo Pharmacy",
+    "subTitle": "अपोलो फार्मेसी",
+    "price": null,
+    "categoryName": "Pharmacy",
+    "address": "MG Road, Pune, Maharashtra 411001",
+    "neighborhood": "Shivajinagar",
+    "street": "MG Road",
+    "city": "Pune",
+    "postalCode": "411001",
+    "state": "Maharashtra",
+    "countryCode": "IN",
+    "phone": "+91 20-2612-3456",
+    "phoneUnformatted": "+912026123456",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 18.5204,
+      "lng": 73.8567
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJAZ123456789",
+    "categories": ["Pharmacy", "Medical supply store"],
+    "reviewsCount": 245,
+    "imagesCount": 12,
+    "openingHours": [
+      {"day": "Monday", "hours": "8 AM to 11 PM"},
+      {"day": "Tuesday", "hours": "8 AM to 11 PM"},
+      {"day": "Wednesday", "hours": "8 AM to 11 PM"},
+      {"day": "Thursday", "hours": "8 AM to 11 PM"},
+      {"day": "Friday", "hours": "8 AM to 11 PM"},
+      {"day": "Saturday", "hours": "8 AM to 11 PM"},
+      {"day": "Sunday", "hours": "9 AM to 10 PM"}
+    ],
+    "additionalInfo": {
+      "Service options": [
+        {"Delivery": true},
+        {"Drive-through": false}
+      ],
+      "Accessibility": [
+        {"Wheelchair accessible parking lot": true}
+      ],
+      "Payments": [
+        {"Credit cards": true},
+        {"UPI": true},
+        {"Cash-only": false}
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {"hour": 8, "occupancyPercent": 45},
+        {"hour": 9, "occupancyPercent": 60},
+        {"hour": 10, "occupancyPercent": 75},
+        {"hour": 11, "occupancyPercent": 80},
+        {"hour": 12, "occupancyPercent": 70},
+        {"hour": 13, "occupancyPercent": 65},
+        {"hour": 14, "occupancyPercent": 55},
+        {"hour": 15, "occupancyPercent": 60},
+        {"hour": 16, "occupancyPercent": 70},
+        {"hour": 17, "occupancyPercent": 85},
+        {"hour": 18, "occupancyPercent": 90},
+        {"hour": 19, "occupancyPercent": 85},
+        {"hour": 20, "occupancyPercent": 75},
+        {"hour": 21, "occupancyPercent": 60},
+        {"hour": 22, "occupancyPercent": 40}
+      ],
+      "Tu": [
+        {"hour": 8, "occupancyPercent": 50},
+        {"hour": 9, "occupancyPercent": 65},
+        {"hour": 10, "occupancyPercent": 78},
+        {"hour": 11, "occupancyPercent": 82},
+        {"hour": 12, "occupancyPercent": 72},
+        {"hour": 13, "occupancyPercent": 68},
+        {"hour": 14, "occupancyPercent": 58},
+        {"hour": 15, "occupancyPercent": 62},
+        {"hour": 16, "occupancyPercent": 72},
+        {"hour": 17, "occupancyPercent": 87},
+        {"hour": 18, "occupancyPercent": 92},
+        {"hour": 19, "occupancyPercent": 88},
+        {"hour": 20, "occupancyPercent": 78},
+        {"hour": 21, "occupancyPercent": 62},
+        {"hour": 22, "occupancyPercent": 42}
+      ],
+      "We": [
+        {"hour": 8, "occupancyPercent": 48},
+        {"hour": 9, "occupancyPercent": 63},
+        {"hour": 10, "occupancyPercent": 76},
+        {"hour": 11, "occupancyPercent": 81},
+        {"hour": 12, "occupancyPercent": 71},
+        {"hour": 13, "occupancyPercent": 67},
+        {"hour": 14, "occupancyPercent": 57},
+        {"hour": 15, "occupancyPercent": 61},
+        {"hour": 16, "occupancyPercent": 71},
+        {"hour": 17, "occupancyPercent": 86},
+        {"hour": 18, "occupancyPercent": 91},
+        {"hour": 19, "occupancyPercent": 87},
+        {"hour": 20, "occupancyPercent": 77},
+        {"hour": 21, "occupancyPercent": 61},
+        {"hour": 22, "occupancyPercent": 41}
+      ],
+      "Th": [
+        {"hour": 8, "occupancyPercent": 47},
+        {"hour": 9, "occupancyPercent": 62},
+        {"hour": 10, "occupancyPercent": 77},
+        {"hour": 11, "occupancyPercent": 83},
+        {"hour": 12, "occupancyPercent": 73},
+        {"hour": 13, "occupancyPercent": 69},
+        {"hour": 14, "occupancyPercent": 59},
+        {"hour": 15, "occupancyPercent": 63},
+        {"hour": 16, "occupancyPercent": 73},
+        {"hour": 17, "occupancyPercent": 88},
+        {"hour": 18, "occupancyPercent": 93},
+        {"hour": 19, "occupancyPercent": 89},
+        {"hour": 20, "occupancyPercent": 79},
+        {"hour": 21, "occupancyPercent": 63},
+        {"hour": 22, "occupancyPercent": 43}
+      ],
+      "Fr": [
+        {"hour": 8, "occupancyPercent": 52},
+        {"hour": 9, "occupancyPercent": 67},
+        {"hour": 10, "occupancyPercent": 80},
+        {"hour": 11, "occupancyPercent": 85},
+        {"hour": 12, "occupancyPercent": 75},
+        {"hour": 13, "occupancyPercent": 71},
+        {"hour": 14, "occupancyPercent": 61},
+        {"hour": 15, "occupancyPercent": 65},
+        {"hour": 16, "occupancyPercent": 75},
+        {"hour": 17, "occupancyPercent": 90},
+        {"hour": 18, "occupancyPercent": 95},
+        {"hour": 19, "occupancyPercent": 91},
+        {"hour": 20, "occupancyPercent": 81},
+        {"hour": 21, "occupancyPercent": 65},
+        {"hour": 22, "occupancyPercent": 45}
+      ],
+      "Sa": [
+        {"hour": 8, "occupancyPercent": 55},
+        {"hour": 9, "occupancyPercent": 70},
+        {"hour": 10, "occupancyPercent": 85},
+        {"hour": 11, "occupancyPercent": 90},
+        {"hour": 12, "occupancyPercent": 88},
+        {"hour": 13, "occupancyPercent": 80},
+        {"hour": 14, "occupancyPercent": 75},
+        {"hour": 15, "occupancyPercent": 78},
+        {"hour": 16, "occupancyPercent": 82},
+        {"hour": 17, "occupancyPercent": 88},
+        {"hour": 18, "occupancyPercent": 92},
+        {"hour": 19, "occupancyPercent": 85},
+        {"hour": 20, "occupancyPercent": 75},
+        {"hour": 21, "occupancyPercent": 60},
+        {"hour": 22, "occupancyPercent": 40}
+      ],
+      "Su": [
+        {"hour": 9, "occupancyPercent": 50},
+        {"hour": 10, "occupancyPercent": 65},
+        {"hour": 11, "occupancyPercent": 75},
+        {"hour": 12, "occupancyPercent": 80},
+        {"hour": 13, "occupancyPercent": 75},
+        {"hour": 14, "occupancyPercent": 70},
+        {"hour": 15, "occupancyPercent": 65},
+        {"hour": 16, "occupancyPercent": 70},
+        {"hour": 17, "occupancyPercent": 75},
+        {"hour": 18, "occupancyPercent": 80},
+        {"hour": 19, "occupancyPercent": 70},
+        {"hour": 20, "occupancyPercent": 55},
+        {"hour": 21, "occupancyPercent": 40}
+      ]
+    },
+    "reviewsDistribution": {
+      "oneStar": 5,
+      "twoStar": 8,
+      "threeStar": 20,
+      "fourStar": 82,
+      "fiveStar": 130
+    }
+  },
+  {
+    "title": "MedPlus Health Services",
+    "subTitle": "मेडप्लस हेल्थ सर्विसेज",
+    "price": null,
+    "categoryName": "Pharmacy",
+    "address": "Koramangala, Bangalore, Karnataka 560034",
+    "neighborhood": "Koramangala",
+    "street": "80 Feet Road",
+    "city": "Bangalore",
+    "postalCode": "560034",
+    "state": "Karnataka",
+    "countryCode": "IN",
+    "phone": "+91 80-4172-8900",
+    "phoneUnformatted": "+918041728900",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 12.9352,
+      "lng": 77.6245
+    },
+    "totalScore": 4.3,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJBY234567890",
+    "categories": ["Pharmacy"],
+    "reviewsCount": 189,
+    "imagesCount": 8,
+    "openingHours": [
+      {"day": "Monday", "hours": "7 AM to 11 PM"},
+      {"day": "Tuesday", "hours": "7 AM to 11 PM"},
+      {"day": "Wednesday", "hours": "7 AM to 11 PM"},
+      {"day": "Thursday", "hours": "7 AM to 11 PM"},
+      {"day": "Friday", "hours": "7 AM to 11 PM"},
+      {"day": "Saturday", "hours": "7 AM to 11 PM"},
+      {"day": "Sunday", "hours": "7 AM to 11 PM"}
+    ],
+    "additionalInfo": {
+      "Service options": [
+        {"Delivery": true},
+        {"Drive-through": false}
+      ],
+      "Accessibility": [
+        {"Wheelchair accessible parking lot": true}
+      ],
+      "Payments": [
+        {"Credit cards": true},
+        {"UPI": true}
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {"hour": 7, "occupancyPercent": 35},
+        {"hour": 8, "occupancyPercent": 50},
+        {"hour": 9, "occupancyPercent": 65},
+        {"hour": 10, "occupancyPercent": 75},
+        {"hour": 11, "occupancyPercent": 80},
+        {"hour": 12, "occupancyPercent": 75},
+        {"hour": 13, "occupancyPercent": 70},
+        {"hour": 14, "occupancyPercent": 60},
+        {"hour": 15, "occupancyPercent": 65},
+        {"hour": 16, "occupancyPercent": 75},
+        {"hour": 17, "occupancyPercent": 85},
+        {"hour": 18, "occupancyPercent": 90},
+        {"hour": 19, "occupancyPercent": 85},
+        {"hour": 20, "occupancyPercent": 75},
+        {"hour": 21, "occupancyPercent": 60},
+        {"hour": 22, "occupancyPercent": 45}
+      ]
+    },
+    "reviewsDistribution": {
+      "oneStar": 8,
+      "twoStar": 12,
+      "threeStar": 25,
+      "fourStar": 70,
+      "fiveStar": 74
+    }
+  },
+  {
+    "title": "Wellness Forever Medicare",
+    "subTitle": "वेलनेस फॉरएवर मेडिकेयर",
+    "price": null,
+    "categoryName": "Drug store",
+    "address": "Andheri West, Mumbai, Maharashtra 400053",
+    "neighborhood": "Andheri West",
+    "street": "Link Road",
+    "city": "Mumbai",
+    "postalCode": "400053",
+    "state": "Maharashtra",
+    "countryCode": "IN",
+    "phone": "+91 22-2673-4500",
+    "phoneUnformatted": "+912226734500",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 19.1354,
+      "lng": 72.8397
+    },
+    "totalScore": 4.6,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJCZ345678901",
+    "categories": ["Drug store", "Medical supply store"],
+    "reviewsCount": 312,
+    "imagesCount": 15,
+    "openingHours": [
+      {"day": "Monday", "hours": "8 AM to 10 PM"},
+      {"day": "Tuesday", "hours": "8 AM to 10 PM"},
+      {"day": "Wednesday", "hours": "8 AM to 10 PM"},
+      {"day": "Thursday", "hours": "8 AM to 10 PM"},
+      {"day": "Friday", "hours": "8 AM to 10 PM"},
+      {"day": "Saturday", "hours": "8 AM to 10 PM"},
+      {"day": "Sunday", "hours": "8 AM to 10 PM"}
+    ],
+    "additionalInfo": {
+      "Service options": [
+        {"Delivery": true},
+        {"Drive-through": true}
+      ],
+      "Accessibility": [
+        {"Wheelchair accessible parking lot": true}
+      ],
+      "Payments": [
+        {"Credit cards": true},
+        {"UPI": true},
+        {"Digital payments": true}
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {"hour": 8, "occupancyPercent": 55},
+        {"hour": 9, "occupancyPercent": 70},
+        {"hour": 10, "occupancyPercent": 80},
+        {"hour": 11, "occupancyPercent": 85},
+        {"hour": 12, "occupancyPercent": 80},
+        {"hour": 13, "occupancyPercent": 75},
+        {"hour": 14, "occupancyPercent": 65},
+        {"hour": 15, "occupancyPercent": 70},
+        {"hour": 16, "occupancyPercent": 80},
+        {"hour": 17, "occupancyPercent": 90},
+        {"hour": 18, "occupancyPercent": 95},
+        {"hour": 19, "occupancyPercent": 90},
+        {"hour": 20, "occupancyPercent": 80},
+        {"hour": 21, "occupancyPercent": 65}
+      ]
+    },
+    "reviewsDistribution": {
+      "oneStar": 3,
+      "twoStar": 5,
+      "threeStar": 18,
+      "fourStar": 95,
+      "fiveStar": 191
+    }
+  },
+  {
+    "title": "Netmeds Pharmacy",
+    "subTitle": "नेटमेड्स फार्मेसी",
+    "price": null,
+    "categoryName": "Pharmacy",
+    "address": "Salt Lake, Kolkata, West Bengal 700064",
+    "neighborhood": "Salt Lake",
+    "street": "Sector V",
+    "city": "Kolkata",
+    "postalCode": "700064",
+    "state": "West Bengal",
+    "countryCode": "IN",
+    "phone": "+91 33-4018-7600",
+    "phoneUnformatted": "+913340187600",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 22.5726,
+      "lng": 88.3639
+    },
+    "totalScore": 4.2,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJDZ456789012",
+    "categories": ["Pharmacy"],
+    "reviewsCount": 156,
+    "imagesCount": 6,
+    "openingHours": [
+      {"day": "Monday", "hours": "9 AM to 9 PM"},
+      {"day": "Tuesday", "hours": "9 AM to 9 PM"},
+      {"day": "Wednesday", "hours": "9 AM to 9 PM"},
+      {"day": "Thursday", "hours": "9 AM to 9 PM"},
+      {"day": "Friday", "hours": "9 AM to 9 PM"},
+      {"day": "Saturday", "hours": "9 AM to 9 PM"},
+      {"day": "Sunday", "hours": "9 AM to 7 PM"}
+    ],
+    "additionalInfo": {
+      "Service options": [
+        {"Delivery": true},
+        {"Drive-through": false}
+      ],
+      "Accessibility": [
+        {"Wheelchair accessible parking lot": false}
+      ],
+      "Payments": [
+        {"Credit cards": true},
+        {"UPI": true}
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {"hour": 9, "occupancyPercent": 40},
+        {"hour": 10, "occupancyPercent": 55},
+        {"hour": 11, "occupancyPercent": 70},
+        {"hour": 12, "occupancyPercent": 75},
+        {"hour": 13, "occupancyPercent": 70},
+        {"hour": 14, "occupancyPercent": 60},
+        {"hour": 15, "occupancyPercent": 65},
+        {"hour": 16, "occupancyPercent": 75},
+        {"hour": 17, "occupancyPercent": 85},
+        {"hour": 18, "occupancyPercent": 90},
+        {"hour": 19, "occupancyPercent": 80},
+        {"hour": 20, "occupancyPercent": 65}
+      ]
+    },
+    "reviewsDistribution": {
+      "oneStar": 10,
+      "twoStar": 15,
+      "threeStar": 30,
+      "fourStar": 60,
+      "fiveStar": 41
+    }
+  },
+  {
+    "title": "Himalaya Wellness Store",
+    "subTitle": "हिमालय वेलनेस स्टोर",
+    "price": null,
+    "categoryName": "Health and beauty shop",
+    "address": "Connaught Place, New Delhi, Delhi 110001",
+    "neighborhood": "Connaught Place",
+    "street": "Inner Circle",
+    "city": "New Delhi",
+    "postalCode": "110001",
+    "state": "Delhi",
+    "countryCode": "IN",
+    "phone": "+91 11-2334-5678",
+    "phoneUnformatted": "+911123345678",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 28.6315,
+      "lng": 77.2167
+    },
+    "totalScore": 4.4,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJEZ567890123",
+    "categories": ["Health and beauty shop", "Herbal medicine store"],
+    "reviewsCount": 98,
+    "imagesCount": 10,
+    "openingHours": [
+      {"day": "Monday", "hours": "10 AM to 9 PM"},
+      {"day": "Tuesday", "hours": "10 AM to 9 PM"},
+      {"day": "Wednesday", "hours": "10 AM to 9 PM"},
+      {"day": "Thursday", "hours": "10 AM to 9 PM"},
+      {"day": "Friday", "hours": "10 AM to 9 PM"},
+      {"day": "Saturday", "hours": "10 AM to 9 PM"},
+      {"day": "Sunday", "hours": "Closed"}
+    ],
+    "additionalInfo": {
+      "Service options": [
+        {"Delivery": false},
+        {"Drive-through": false}
+      ],
+      "Accessibility": [
+        {"Wheelchair accessible parking lot": true}
+      ],
+      "Payments": [
+        {"Credit cards": true},
+        {"UPI": true}
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {"hour": 10, "occupancyPercent": 30},
+        {"hour": 11, "occupancyPercent": 45},
+        {"hour": 12, "occupancyPercent": 60},
+        {"hour": 13, "occupancyPercent": 70},
+        {"hour": 14, "occupancyPercent": 65},
+        {"hour": 15, "occupancyPercent": 55},
+        {"hour": 16, "occupancyPercent": 60},
+        {"hour": 17, "occupancyPercent": 75},
+        {"hour": 18, "occupancyPercent": 85},
+        {"hour": 19, "occupancyPercent": 80},
+        {"hour": 20, "occupancyPercent": 65}
+      ]
+    },
+    "reviewsDistribution": {
+      "oneStar": 2,
+      "twoStar": 5,
+      "threeStar": 12,
+      "fourStar": 38,
+      "fiveStar": 41
+    }
+  },
+  {
+    "title": "Guardian Pharmacy",
+    "subTitle": "गार्डियन फार्मेसी",
+    "price": null,
+    "categoryName": "Pharmacy",
+    "address": "Jubilee Hills, Hyderabad, Telangana 500033",
+    "neighborhood": "Jubilee Hills",
+    "street": "Road No. 36",
+    "city": "Hyderabad",
+    "postalCode": "500033",
+    "state": "Telangana",
+    "countryCode": "IN",
+    "phone": "+91 40-2355-7890",
+    "phoneUnformatted": "+914023557890",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 17.4326,
+      "lng": 78.4071
+    },
+    "totalScore": 4.1,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJFZ678901234",
+    "categories": ["Pharmacy", "Medical supply store"],
+    "reviewsCount": 67,
+    "imagesCount": 5,
+    "openingHours": [
+      {"day": "Monday", "hours": "8 AM to 10 PM"},
+      {"day": "Tuesday", "hours": "8 AM to 10 PM"},
+      {"day": "Wednesday", "hours": "8 AM to 10 PM"},
+      {"day": "Thursday", "hours": "8 AM to 10 PM"},
+      {"day": "Friday", "hours": "8 AM to 10 PM"},
+      {"day": "Saturday", "hours": "8 AM to 10 PM"},
+      {"day": "Sunday", "hours": "9 AM to 9 PM"}
+    ],
+    "additionalInfo": {
+      "Service options": [
+        {"Delivery": true},
+        {"Drive-through": false}
+      ],
+      "Accessibility": [
+        {"Wheelchair accessible parking lot": false}
+      ],
+      "Payments": [
+        {"Cash-only": true}
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {"hour": 8, "occupancyPercent": 40},
+        {"hour": 9, "occupancyPercent": 55},
+        {"hour": 10, "occupancyPercent": 65},
+        {"hour": 11, "occupancyPercent": 70},
+        {"hour": 12, "occupancyPercent": 65},
+        {"hour": 13, "occupancyPercent": 60},
+        {"hour": 14, "occupancyPercent": 50},
+        {"hour": 15, "occupancyPercent": 55},
+        {"hour": 16, "occupancyPercent": 65},
+        {"hour": 17, "occupancyPercent": 75},
+        {"hour": 18, "occupancyPercent": 85},
+        {"hour": 19, "occupancyPercent": 80},
+        {"hour": 20, "occupancyPercent": 70},
+        {"hour": 21, "occupancyPercent": 55}
+      ]
+    },
+    "reviewsDistribution": {
+      "oneStar": 5,
+      "twoStar": 8,
+      "threeStar": 15,
+      "fourStar": 25,
+      "fiveStar": 14
+    }
+  },
+  {
+    "title": "PharmEasy Store",
+    "subTitle": "फार्मईज़ी स्टोर",
+    "price": null,
+    "categoryName": "Drug store",
+    "address": "Whitefield, Bangalore, Karnataka 560066",
+    "neighborhood": "Whitefield",
+    "street": "ITPL Main Road",
+    "city": "Bangalore",
+    "postalCode": "560066",
+    "state": "Karnataka",
+    "countryCode": "IN",
+    "phone": "+91 80-6789-0123",
+    "phoneUnformatted": "+918067890123",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 12.9698,
+      "lng": 77.7499
+    },
+    "totalScore": 4.7,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJGZ789012345",
+    "categories": ["Drug store"],
+    "reviewsCount": 428,
+    "imagesCount": 18,
+    "openingHours": [
+      {"day": "Monday", "hours": "Open 24 hours"},
+      {"day": "Tuesday", "hours": "Open 24 hours"},
+      {"day": "Wednesday", "hours": "Open 24 hours"},
+      {"day": "Thursday", "hours": "Open 24 hours"},
+      {"day": "Friday", "hours": "Open 24 hours"},
+      {"day": "Saturday", "hours": "Open 24 hours"},
+      {"day": "Sunday", "hours": "Open 24 hours"}
+    ],
+    "additionalInfo": {
+      "Service options": [
+        {"Delivery": true},
+        {"Drive-through": true}
+      ],
+      "Accessibility": [
+        {"Wheelchair accessible parking lot": true}
+      ],
+      "Payments": [
+        {"Credit cards": true},
+        {"UPI": true},
+        {"Digital payments": true}
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {"hour": 0, "occupancyPercent": 25},
+        {"hour": 1, "occupancyPercent": 15},
+        {"hour": 2, "occupancyPercent": 10},
+        {"hour": 3, "occupancyPercent": 8},
+        {"hour": 4, "occupancyPercent": 10},
+        {"hour": 5, "occupancyPercent": 15},
+        {"hour": 6, "occupancyPercent": 25},
+        {"hour": 7, "occupancyPercent": 40},
+        {"hour": 8, "occupancyPercent": 55},
+        {"hour": 9, "occupancyPercent": 70},
+        {"hour": 10, "occupancyPercent": 80},
+        {"hour": 11, "occupancyPercent": 85},
+        {"hour": 12, "occupancyPercent": 80},
+        {"hour": 13, "occupancyPercent": 75},
+        {"hour": 14, "occupancyPercent": 65},
+        {"hour": 15, "occupancyPercent": 70},
+        {"hour": 16, "occupancyPercent": 80},
+        {"hour": 17, "occupancyPercent": 90},
+        {"hour": 18, "occupancyPercent": 95},
+        {"hour": 19, "occupancyPercent": 90},
+        {"hour": 20, "occupancyPercent": 80},
+        {"hour": 21, "occupancyPercent": 65},
+        {"hour": 22, "occupancyPercent": 50},
+        {"hour": 23, "occupancyPercent": 35}
+      ],
+      "Tu": [
+        {"hour": 0, "occupancyPercent": 25},
+        {"hour": 1, "occupancyPercent": 15},
+        {"hour": 2, "occupancyPercent": 10},
+        {"hour": 3, "occupancyPercent": 8},
+        {"hour": 4, "occupancyPercent": 10},
+        {"hour": 5, "occupancyPercent": 15},
+        {"hour": 6, "occupancyPercent": 25},
+        {"hour": 7, "occupancyPercent": 40},
+        {"hour": 8, "occupancyPercent": 55},
+        {"hour": 9, "occupancyPercent": 70},
+        {"hour": 10, "occupancyPercent": 80},
+        {"hour": 11, "occupancyPercent": 85},
+        {"hour": 12, "occupancyPercent": 80},
+        {"hour": 13, "occupancyPercent": 75},
+        {"hour": 14, "occupancyPercent": 65},
+        {"hour": 15, "occupancyPercent": 70},
+        {"hour": 16, "occupancyPercent": 80},
+        {"hour": 17, "occupancyPercent": 90},
+        {"hour": 18, "occupancyPercent": 95},
+        {"hour": 19, "occupancyPercent": 90},
+        {"hour": 20, "occupancyPercent": 80},
+        {"hour": 21, "occupancyPercent": 65},
+        {"hour": 22, "occupancyPercent": 50},
+        {"hour": 23, "occupancyPercent": 35}
+      ]
+    },
+    "reviewsDistribution": {
+      "oneStar": 2,
+      "twoStar": 4,
+      "threeStar": 15,
+      "fourStar": 120,
+      "fiveStar": 287
+    }
+  },
+  {
+    "title": "Aarogya Medical Store",
+    "subTitle": "आरोग्य मेडिकल स्टोर",
+    "price": null,
+    "categoryName": "Medical supply store",
+    "address": "Civil Lines, Jaipur, Rajasthan 302006",
+    "neighborhood": "Civil Lines",
+    "street": "Station Road",
+    "city": "Jaipur",
+    "postalCode": "302006",
+    "state": "Rajasthan",
+    "countryCode": "IN",
+    "phone": "+91 141-234-5678",
+    "phoneUnformatted": "+911412345678",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 26.9124,
+      "lng": 75.7873
+    },
+    "totalScore": 3.9,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJHZ890123456",
+    "categories": ["Medical supply store"],
+    "reviewsCount": 45,
+    "imagesCount": 3,
+    "openingHours": [
+      {"day": "Monday", "hours": "9 AM to 8 PM"},
+      {"day": "Tuesday", "hours": "9 AM to 8 PM"},
+      {"day": "Wednesday", "hours": "9 AM to 8 PM"},
+      {"day": "Thursday", "hours": "9 AM to 8 PM"},
+      {"day": "Friday", "hours": "9 AM to 8 PM"},
+      {"day": "Saturday", "hours": "9 AM to 8 PM"},
+      {"day": "Sunday", "hours": "Closed"}
+    ],
+    "additionalInfo": {
+      "Service options": [
+        {"Delivery": false},
+        {"Drive-through": false}
+      ],
+      "Accessibility": [
+        {"Wheelchair accessible parking lot": false}
+      ],
+      "Payments": [
+        {"Cash-only": true}
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {"hour": 9, "occupancyPercent": 35},
+        {"hour": 10, "occupancyPercent": 50},
+        {"hour": 11, "occupancyPercent": 60},
+        {"hour": 12, "occupancyPercent": 65},
+        {"hour": 13, "occupancyPercent": 60},
+        {"hour": 14, "occupancyPercent": 50},
+        {"hour": 15, "occupancyPercent": 55},
+        {"hour": 16, "occupancyPercent": 65},
+        {"hour": 17, "occupancyPercent": 75},
+        {"hour": 18, "occupancyPercent": 70},
+        {"hour": 19, "occupancyPercent": 55}
+      ]
+    },
+    "reviewsDistribution": {
+      "oneStar": 8,
+      "twoStar": 10,
+      "threeStar": 12,
+      "fourStar": 10,
+      "fiveStar": 5
+    }
+  },
+  {
+    "title": "1mg Healthcare Store",
+    "subTitle": "वनएमजी हेल्थकेयर स्टोर",
+    "price": null,
+    "categoryName": "Pharmacy",
+    "address": "Sector 18, Noida, Uttar Pradesh 201301",
+    "neighborhood": "Sector 18",
+    "street": "Atta Market",
+    "city": "Noida",
+    "postalCode": "201301",
+    "state": "Uttar Pradesh",
+    "countryCode": "IN",
+    "phone": "+91 120-456-7890",
+    "phoneUnformatted": "+911204567890",
+    "claimThisBusiness": true,
+    "location": {
+      "lat": 28.5355,
+      "lng": 77.3910
+    },
+    "totalScore": 4.5,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJIZ901234567",
+    "categories": ["Pharmacy", "Health consultant"],
+    "reviewsCount": 234,
+    "imagesCount": 14,
+    "openingHours": [
+      {"day": "Monday", "hours": "8 AM to 11 PM"},
+      {"day": "Tuesday", "hours": "8 AM to 11 PM"},
+      {"day": "Wednesday", "hours": "8 AM to 11 PM"},
+      {"day": "Thursday", "hours": "8 AM to 11 PM"},
+      {"day": "Friday", "hours": "8 AM to 11 PM"},
+      {"day": "Saturday", "hours": "8 AM to 11 PM"},
+      {"day": "Sunday", "hours": "8 AM to 11 PM"}
+    ],
+    "additionalInfo": {
+      "Service options": [
+        {"Delivery": true},
+        {"Drive-through": false}
+      ],
+      "Accessibility": [
+        {"Wheelchair accessible parking lot": true}
+      ],
+      "Payments": [
+        {"Credit cards": true},
+        {"UPI": true},
+        {"Digital payments": true}
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {"hour": 8, "occupancyPercent": 45},
+        {"hour": 9, "occupancyPercent": 60},
+        {"hour": 10, "occupancyPercent": 75},
+        {"hour": 11, "occupancyPercent": 80},
+        {"hour": 12, "occupancyPercent": 75},
+        {"hour": 13, "occupancyPercent": 70},
+        {"hour": 14, "occupancyPercent": 60},
+        {"hour": 15, "occupancyPercent": 65},
+        {"hour": 16, "occupancyPercent": 75},
+        {"hour": 17, "occupancyPercent": 85},
+        {"hour": 18, "occupancyPercent": 90},
+        {"hour": 19, "occupancyPercent": 85},
+        {"hour": 20, "occupancyPercent": 75},
+        {"hour": 21, "occupancyPercent": 60},
+        {"hour": 22, "occupancyPercent": 45}
+      ]
+    },
+    "reviewsDistribution": {
+      "oneStar": 4,
+      "twoStar": 7,
+      "threeStar": 22,
+      "fourStar": 85,
+      "fiveStar": 116
+    }
+  },
+  {
+    "title": "Sanjeevani Homeopathy Clinic",
+    "subTitle": "संजीवनी होम्योपैथी क्लिनिक",
+    "price": null,
+    "categoryName": "Homeopathic pharmacy",
+    "address": "Gomti Nagar, Lucknow, Uttar Pradesh 226010",
+    "neighborhood": "Gomti Nagar",
+    "street": "Vipin Khand",
+    "city": "Lucknow",
+    "postalCode": "226010",
+    "state": "Uttar Pradesh",
+    "countryCode": "IN",
+    "phone": "+91 522-345-6789",
+    "phoneUnformatted": "+915223456789",
+    "claimThisBusiness": false,
+    "location": {
+      "lat": 26.8467,
+      "lng": 80.9462
+    },
+    "totalScore": 4.8,
+    "permanentlyClosed": false,
+    "temporarilyClosed": false,
+    "placeId": "ChIJJZ012345678",
+    "categories": ["Homeopathic pharmacy"],
+    "reviewsCount": 72,
+    "imagesCount": 7,
+    "openingHours": [
+      {"day": "Monday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
+      {"day": "Tuesday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
+      {"day": "Wednesday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
+      {"day": "Thursday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
+      {"day": "Friday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
+      {"day": "Saturday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
+      {"day": "Sunday", "hours": "10 AM to 2 PM"}
+    ],
+    "additionalInfo": {
+      "Service options": [
+        {"Delivery": false},
+        {"Drive-through": false}
+      ],
+      "Accessibility": [
+        {"Wheelchair accessible parking lot": false}
+      ],
+      "Payments": [
+        {"Cash-only": true}
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {"hour": 10, "occupancyPercent": 60},
+        {"hour": 11, "occupancyPercent": 75},
+        {"hour": 12, "occupancyPercent": 80},
+        {"hour": 13, "occupancyPercent": 70},
+        {"hour": 17, "occupancyPercent": 65},
+        {"hour": 18, "occupancyPercent": 85},
+        {"hour": 19, "occupancyPercent": 75}
+      ]
+    },
+    "reviewsDistribution": {
+      "oneStar": 1,
+      "twoStar": 2,
+      "threeStar": 5,
+      "fourStar": 18,
+      "fiveStar": 46
+    }
+  }
+]

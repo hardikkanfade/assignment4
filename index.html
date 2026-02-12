@@ -2,67 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmacy Analytics Dashboard</title>
 
-    <!-- Chart.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- FusionCharts -->
+    <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    <script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
 
-    <h1>Indian Pharmacy Analytics Dashboard</h1>
-    <p class="subtitle">Interactive Data Visualization using FusionCharts | Sample Indian Dataset</p>
+    <h1>Pharmacy Data Analytics Dashboard</h1>
 
-    <div class="file-loader">
-        <input type="file" id="jsonFile" accept=".json">
-        <button onclick="window.loadJSON()">Load Dataset</button>
-        <p class="info">Or place your JSON file named 'indian_pharmacies.json' in the same folder and reload the page</p>
-    </div>
-
-    <div id="loading" style="display: none; text-align: center; padding: 20px;">
-        <p>Loading data...</p>
-    </div>
-
-    <div id="error" style="display: none; text-align: center; padding: 20px; color: red;">
-        <p id="errorMessage"></p>
-    </div>
-
-    <div class="grid" id="dashboardGrid" style="display: none;">
+    <div class="grid">
 
         <div class="card">
             <h3>Category Distribution</h3>
-            <canvas id="categoryChart"></canvas>
+            <div id="categoryChart"></div>
         </div>
 
         <div class="card">
             <h3>Claimed vs Unclaimed</h3>
-            <canvas id="claimedChart"></canvas>
+            <div id="claimedChart"></div>
         </div>
 
         <div class="card">
             <h3>Rating Distribution</h3>
-            <canvas id="ratingChart"></canvas>
+            <div id="ratingChart"></div>
         </div>
 
         <div class="card">
-            <h3>Reviews Count</h3>
-            <canvas id="reviewChart"></canvas>
+            <h3>Reviews vs Ratings</h3>
+            <div id="reviewChart"></div>
         </div>
 
         <div class="card full">
-            <h3>Customer Activity by Hour</h3>
-            <canvas id="ratingsChart"></canvas>
+            <h3>Popular Customer Hours</h3>
+            <div id="timeChart"></div>
         </div>
 
         <div class="card full">
             <h3>Service Availability</h3>
-            <canvas id="serviceChart"></canvas>
+            <div id="serviceChart"></div>
         </div>
 
     </div>
 
+    <script src="indian_pharmasi.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,4 +1,5 @@
-[
+// Indian Pharmacy Database
+const pharmacyData = [
   {
     "title": "Apollo Pharmacy",
     "subTitle": "अपोलो फार्मेसी",
@@ -865,4 +866,4 @@
       "fiveStar": 46
     }
   }
-]
+];

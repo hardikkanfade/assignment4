@@ -1,869 +1,12303 @@
-// Indian Pharmacy Database
+// Indian Pharmacy Database - Analytical Subset (100 entries)
 const pharmacyData = [
   {
-    "title": "Apollo Pharmacy",
-    "subTitle": "अपोलो फार्मेसी",
-    "price": null,
-    "categoryName": "Pharmacy",
-    "address": "MG Road, Pune, Maharashtra 411001",
-    "neighborhood": "Shivajinagar",
-    "street": "MG Road",
-    "city": "Pune",
-    "postalCode": "411001",
-    "state": "Maharashtra",
-    "countryCode": "IN",
-    "phone": "+91 20-2612-3456",
-    "phoneUnformatted": "+912026123456",
-    "claimThisBusiness": true,
-    "location": {
-      "lat": 18.5204,
-      "lng": 73.8567
-    },
-    "totalScore": 4.5,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": "ChIJAZ123456789",
-    "categories": ["Pharmacy", "Medical supply store"],
-    "reviewsCount": 245,
-    "imagesCount": 12,
-    "openingHours": [
-      {"day": "Monday", "hours": "8 AM to 11 PM"},
-      {"day": "Tuesday", "hours": "8 AM to 11 PM"},
-      {"day": "Wednesday", "hours": "8 AM to 11 PM"},
-      {"day": "Thursday", "hours": "8 AM to 11 PM"},
-      {"day": "Friday", "hours": "8 AM to 11 PM"},
-      {"day": "Saturday", "hours": "8 AM to 11 PM"},
-      {"day": "Sunday", "hours": "9 AM to 10 PM"}
-    ],
-    "additionalInfo": {
-      "Service options": [
-        {"Delivery": true},
-        {"Drive-through": false}
-      ],
-      "Accessibility": [
-        {"Wheelchair accessible parking lot": true}
-      ],
-      "Payments": [
-        {"Credit cards": true},
-        {"UPI": true},
-        {"Cash-only": false}
-      ]
-    },
-    "popularTimesHistogram": {
-      "Mo": [
-        {"hour": 8, "occupancyPercent": 45},
-        {"hour": 9, "occupancyPercent": 60},
-        {"hour": 10, "occupancyPercent": 75},
-        {"hour": 11, "occupancyPercent": 80},
-        {"hour": 12, "occupancyPercent": 70},
-        {"hour": 13, "occupancyPercent": 65},
-        {"hour": 14, "occupancyPercent": 55},
-        {"hour": 15, "occupancyPercent": 60},
-        {"hour": 16, "occupancyPercent": 70},
-        {"hour": 17, "occupancyPercent": 85},
-        {"hour": 18, "occupancyPercent": 90},
-        {"hour": 19, "occupancyPercent": 85},
-        {"hour": 20, "occupancyPercent": 75},
-        {"hour": 21, "occupancyPercent": 60},
-        {"hour": 22, "occupancyPercent": 40}
-      ],
-      "Tu": [
-        {"hour": 8, "occupancyPercent": 50},
-        {"hour": 9, "occupancyPercent": 65},
-        {"hour": 10, "occupancyPercent": 78},
-        {"hour": 11, "occupancyPercent": 82},
-        {"hour": 12, "occupancyPercent": 72},
-        {"hour": 13, "occupancyPercent": 68},
-        {"hour": 14, "occupancyPercent": 58},
-        {"hour": 15, "occupancyPercent": 62},
-        {"hour": 16, "occupancyPercent": 72},
-        {"hour": 17, "occupancyPercent": 87},
-        {"hour": 18, "occupancyPercent": 92},
-        {"hour": 19, "occupancyPercent": 88},
-        {"hour": 20, "occupancyPercent": 78},
-        {"hour": 21, "occupancyPercent": 62},
-        {"hour": 22, "occupancyPercent": 42}
-      ],
-      "We": [
-        {"hour": 8, "occupancyPercent": 48},
-        {"hour": 9, "occupancyPercent": 63},
-        {"hour": 10, "occupancyPercent": 76},
-        {"hour": 11, "occupancyPercent": 81},
-        {"hour": 12, "occupancyPercent": 71},
-        {"hour": 13, "occupancyPercent": 67},
-        {"hour": 14, "occupancyPercent": 57},
-        {"hour": 15, "occupancyPercent": 61},
-        {"hour": 16, "occupancyPercent": 71},
-        {"hour": 17, "occupancyPercent": 86},
-        {"hour": 18, "occupancyPercent": 91},
-        {"hour": 19, "occupancyPercent": 87},
-        {"hour": 20, "occupancyPercent": 77},
-        {"hour": 21, "occupancyPercent": 61},
-        {"hour": 22, "occupancyPercent": 41}
-      ],
-      "Th": [
-        {"hour": 8, "occupancyPercent": 47},
-        {"hour": 9, "occupancyPercent": 62},
-        {"hour": 10, "occupancyPercent": 77},
-        {"hour": 11, "occupancyPercent": 83},
-        {"hour": 12, "occupancyPercent": 73},
-        {"hour": 13, "occupancyPercent": 69},
-        {"hour": 14, "occupancyPercent": 59},
-        {"hour": 15, "occupancyPercent": 63},
-        {"hour": 16, "occupancyPercent": 73},
-        {"hour": 17, "occupancyPercent": 88},
-        {"hour": 18, "occupancyPercent": 93},
-        {"hour": 19, "occupancyPercent": 89},
-        {"hour": 20, "occupancyPercent": 79},
-        {"hour": 21, "occupancyPercent": 63},
-        {"hour": 22, "occupancyPercent": 43}
-      ],
-      "Fr": [
-        {"hour": 8, "occupancyPercent": 52},
-        {"hour": 9, "occupancyPercent": 67},
-        {"hour": 10, "occupancyPercent": 80},
-        {"hour": 11, "occupancyPercent": 85},
-        {"hour": 12, "occupancyPercent": 75},
-        {"hour": 13, "occupancyPercent": 71},
-        {"hour": 14, "occupancyPercent": 61},
-        {"hour": 15, "occupancyPercent": 65},
-        {"hour": 16, "occupancyPercent": 75},
-        {"hour": 17, "occupancyPercent": 90},
-        {"hour": 18, "occupancyPercent": 95},
-        {"hour": 19, "occupancyPercent": 91},
-        {"hour": 20, "occupancyPercent": 81},
-        {"hour": 21, "occupancyPercent": 65},
-        {"hour": 22, "occupancyPercent": 45}
-      ],
-      "Sa": [
-        {"hour": 8, "occupancyPercent": 55},
-        {"hour": 9, "occupancyPercent": 70},
-        {"hour": 10, "occupancyPercent": 85},
-        {"hour": 11, "occupancyPercent": 90},
-        {"hour": 12, "occupancyPercent": 88},
-        {"hour": 13, "occupancyPercent": 80},
-        {"hour": 14, "occupancyPercent": 75},
-        {"hour": 15, "occupancyPercent": 78},
-        {"hour": 16, "occupancyPercent": 82},
-        {"hour": 17, "occupancyPercent": 88},
-        {"hour": 18, "occupancyPercent": 92},
-        {"hour": 19, "occupancyPercent": 85},
-        {"hour": 20, "occupancyPercent": 75},
-        {"hour": 21, "occupancyPercent": 60},
-        {"hour": 22, "occupancyPercent": 40}
-      ],
-      "Su": [
-        {"hour": 9, "occupancyPercent": 50},
-        {"hour": 10, "occupancyPercent": 65},
-        {"hour": 11, "occupancyPercent": 75},
-        {"hour": 12, "occupancyPercent": 80},
-        {"hour": 13, "occupancyPercent": 75},
-        {"hour": 14, "occupancyPercent": 70},
-        {"hour": 15, "occupancyPercent": 65},
-        {"hour": 16, "occupancyPercent": 70},
-        {"hour": 17, "occupancyPercent": 75},
-        {"hour": 18, "occupancyPercent": 80},
-        {"hour": 19, "occupancyPercent": 70},
-        {"hour": 20, "occupancyPercent": 55},
-        {"hour": 21, "occupancyPercent": 40}
-      ]
-    },
-    "reviewsDistribution": {
-      "oneStar": 5,
-      "twoStar": 8,
-      "threeStar": 20,
-      "fourStar": 82,
-      "fiveStar": 130
-    }
-  },
-  {
-    "title": "MedPlus Health Services",
-    "subTitle": "मेडप्लस हेल्थ सर्विसेज",
-    "price": null,
-    "categoryName": "Pharmacy",
-    "address": "Koramangala, Bangalore, Karnataka 560034",
-    "neighborhood": "Koramangala",
-    "street": "80 Feet Road",
-    "city": "Bangalore",
-    "postalCode": "560034",
-    "state": "Karnataka",
-    "countryCode": "IN",
-    "phone": "+91 80-4172-8900",
-    "phoneUnformatted": "+918041728900",
-    "claimThisBusiness": true,
-    "location": {
-      "lat": 12.9352,
-      "lng": 77.6245
-    },
-    "totalScore": 4.3,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": "ChIJBY234567890",
-    "categories": ["Pharmacy"],
-    "reviewsCount": 189,
-    "imagesCount": 8,
-    "openingHours": [
-      {"day": "Monday", "hours": "7 AM to 11 PM"},
-      {"day": "Tuesday", "hours": "7 AM to 11 PM"},
-      {"day": "Wednesday", "hours": "7 AM to 11 PM"},
-      {"day": "Thursday", "hours": "7 AM to 11 PM"},
-      {"day": "Friday", "hours": "7 AM to 11 PM"},
-      {"day": "Saturday", "hours": "7 AM to 11 PM"},
-      {"day": "Sunday", "hours": "7 AM to 11 PM"}
-    ],
-    "additionalInfo": {
-      "Service options": [
-        {"Delivery": true},
-        {"Drive-through": false}
-      ],
-      "Accessibility": [
-        {"Wheelchair accessible parking lot": true}
-      ],
-      "Payments": [
-        {"Credit cards": true},
-        {"UPI": true}
-      ]
-    },
-    "popularTimesHistogram": {
-      "Mo": [
-        {"hour": 7, "occupancyPercent": 35},
-        {"hour": 8, "occupancyPercent": 50},
-        {"hour": 9, "occupancyPercent": 65},
-        {"hour": 10, "occupancyPercent": 75},
-        {"hour": 11, "occupancyPercent": 80},
-        {"hour": 12, "occupancyPercent": 75},
-        {"hour": 13, "occupancyPercent": 70},
-        {"hour": 14, "occupancyPercent": 60},
-        {"hour": 15, "occupancyPercent": 65},
-        {"hour": 16, "occupancyPercent": 75},
-        {"hour": 17, "occupancyPercent": 85},
-        {"hour": 18, "occupancyPercent": 90},
-        {"hour": 19, "occupancyPercent": 85},
-        {"hour": 20, "occupancyPercent": 75},
-        {"hour": 21, "occupancyPercent": 60},
-        {"hour": 22, "occupancyPercent": 45}
-      ]
-    },
-    "reviewsDistribution": {
-      "oneStar": 8,
-      "twoStar": 12,
-      "threeStar": 25,
-      "fourStar": 70,
-      "fiveStar": 74
-    }
-  },
-  {
-    "title": "Wellness Forever Medicare",
-    "subTitle": "वेलनेस फॉरएवर मेडिकेयर",
-    "price": null,
-    "categoryName": "Drug store",
-    "address": "Andheri West, Mumbai, Maharashtra 400053",
-    "neighborhood": "Andheri West",
-    "street": "Link Road",
-    "city": "Mumbai",
-    "postalCode": "400053",
-    "state": "Maharashtra",
-    "countryCode": "IN",
-    "phone": "+91 22-2673-4500",
-    "phoneUnformatted": "+912226734500",
-    "claimThisBusiness": true,
-    "location": {
-      "lat": 19.1354,
-      "lng": 72.8397
-    },
-    "totalScore": 4.6,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": "ChIJCZ345678901",
-    "categories": ["Drug store", "Medical supply store"],
-    "reviewsCount": 312,
-    "imagesCount": 15,
-    "openingHours": [
-      {"day": "Monday", "hours": "8 AM to 10 PM"},
-      {"day": "Tuesday", "hours": "8 AM to 10 PM"},
-      {"day": "Wednesday", "hours": "8 AM to 10 PM"},
-      {"day": "Thursday", "hours": "8 AM to 10 PM"},
-      {"day": "Friday", "hours": "8 AM to 10 PM"},
-      {"day": "Saturday", "hours": "8 AM to 10 PM"},
-      {"day": "Sunday", "hours": "8 AM to 10 PM"}
-    ],
-    "additionalInfo": {
-      "Service options": [
-        {"Delivery": true},
-        {"Drive-through": true}
-      ],
-      "Accessibility": [
-        {"Wheelchair accessible parking lot": true}
-      ],
-      "Payments": [
-        {"Credit cards": true},
-        {"UPI": true},
-        {"Digital payments": true}
-      ]
-    },
-    "popularTimesHistogram": {
-      "Mo": [
-        {"hour": 8, "occupancyPercent": 55},
-        {"hour": 9, "occupancyPercent": 70},
-        {"hour": 10, "occupancyPercent": 80},
-        {"hour": 11, "occupancyPercent": 85},
-        {"hour": 12, "occupancyPercent": 80},
-        {"hour": 13, "occupancyPercent": 75},
-        {"hour": 14, "occupancyPercent": 65},
-        {"hour": 15, "occupancyPercent": 70},
-        {"hour": 16, "occupancyPercent": 80},
-        {"hour": 17, "occupancyPercent": 90},
-        {"hour": 18, "occupancyPercent": 95},
-        {"hour": 19, "occupancyPercent": 90},
-        {"hour": 20, "occupancyPercent": 80},
-        {"hour": 21, "occupancyPercent": 65}
-      ]
-    },
-    "reviewsDistribution": {
-      "oneStar": 3,
-      "twoStar": 5,
-      "threeStar": 18,
-      "fourStar": 95,
-      "fiveStar": 191
-    }
-  },
-  {
-    "title": "Netmeds Pharmacy",
-    "subTitle": "नेटमेड्स फार्मेसी",
-    "price": null,
-    "categoryName": "Pharmacy",
-    "address": "Salt Lake, Kolkata, West Bengal 700064",
-    "neighborhood": "Salt Lake",
-    "street": "Sector V",
-    "city": "Kolkata",
-    "postalCode": "700064",
-    "state": "West Bengal",
-    "countryCode": "IN",
-    "phone": "+91 33-4018-7600",
-    "phoneUnformatted": "+913340187600",
-    "claimThisBusiness": false,
-    "location": {
-      "lat": 22.5726,
-      "lng": 88.3639
-    },
-    "totalScore": 4.2,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": "ChIJDZ456789012",
-    "categories": ["Pharmacy"],
-    "reviewsCount": 156,
-    "imagesCount": 6,
-    "openingHours": [
-      {"day": "Monday", "hours": "9 AM to 9 PM"},
-      {"day": "Tuesday", "hours": "9 AM to 9 PM"},
-      {"day": "Wednesday", "hours": "9 AM to 9 PM"},
-      {"day": "Thursday", "hours": "9 AM to 9 PM"},
-      {"day": "Friday", "hours": "9 AM to 9 PM"},
-      {"day": "Saturday", "hours": "9 AM to 9 PM"},
-      {"day": "Sunday", "hours": "9 AM to 7 PM"}
-    ],
-    "additionalInfo": {
-      "Service options": [
-        {"Delivery": true},
-        {"Drive-through": false}
-      ],
-      "Accessibility": [
-        {"Wheelchair accessible parking lot": false}
-      ],
-      "Payments": [
-        {"Credit cards": true},
-        {"UPI": true}
-      ]
-    },
-    "popularTimesHistogram": {
-      "Mo": [
-        {"hour": 9, "occupancyPercent": 40},
-        {"hour": 10, "occupancyPercent": 55},
-        {"hour": 11, "occupancyPercent": 70},
-        {"hour": 12, "occupancyPercent": 75},
-        {"hour": 13, "occupancyPercent": 70},
-        {"hour": 14, "occupancyPercent": 60},
-        {"hour": 15, "occupancyPercent": 65},
-        {"hour": 16, "occupancyPercent": 75},
-        {"hour": 17, "occupancyPercent": 85},
-        {"hour": 18, "occupancyPercent": 90},
-        {"hour": 19, "occupancyPercent": 80},
-        {"hour": 20, "occupancyPercent": 65}
-      ]
-    },
-    "reviewsDistribution": {
-      "oneStar": 10,
-      "twoStar": 15,
-      "threeStar": 30,
-      "fourStar": 60,
-      "fiveStar": 41
-    }
-  },
-  {
-    "title": "Himalaya Wellness Store",
-    "subTitle": "हिमालय वेलनेस स्टोर",
-    "price": null,
-    "categoryName": "Health and beauty shop",
-    "address": "Connaught Place, New Delhi, Delhi 110001",
-    "neighborhood": "Connaught Place",
-    "street": "Inner Circle",
-    "city": "New Delhi",
-    "postalCode": "110001",
-    "state": "Delhi",
-    "countryCode": "IN",
-    "phone": "+91 11-2334-5678",
-    "phoneUnformatted": "+911123345678",
-    "claimThisBusiness": true,
-    "location": {
-      "lat": 28.6315,
-      "lng": 77.2167
-    },
-    "totalScore": 4.4,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": "ChIJEZ567890123",
-    "categories": ["Health and beauty shop", "Herbal medicine store"],
-    "reviewsCount": 98,
-    "imagesCount": 10,
-    "openingHours": [
-      {"day": "Monday", "hours": "10 AM to 9 PM"},
-      {"day": "Tuesday", "hours": "10 AM to 9 PM"},
-      {"day": "Wednesday", "hours": "10 AM to 9 PM"},
-      {"day": "Thursday", "hours": "10 AM to 9 PM"},
-      {"day": "Friday", "hours": "10 AM to 9 PM"},
-      {"day": "Saturday", "hours": "10 AM to 9 PM"},
-      {"day": "Sunday", "hours": "Closed"}
-    ],
-    "additionalInfo": {
-      "Service options": [
-        {"Delivery": false},
-        {"Drive-through": false}
-      ],
-      "Accessibility": [
-        {"Wheelchair accessible parking lot": true}
-      ],
-      "Payments": [
-        {"Credit cards": true},
-        {"UPI": true}
-      ]
-    },
-    "popularTimesHistogram": {
-      "Mo": [
-        {"hour": 10, "occupancyPercent": 30},
-        {"hour": 11, "occupancyPercent": 45},
-        {"hour": 12, "occupancyPercent": 60},
-        {"hour": 13, "occupancyPercent": 70},
-        {"hour": 14, "occupancyPercent": 65},
-        {"hour": 15, "occupancyPercent": 55},
-        {"hour": 16, "occupancyPercent": 60},
-        {"hour": 17, "occupancyPercent": 75},
-        {"hour": 18, "occupancyPercent": 85},
-        {"hour": 19, "occupancyPercent": 80},
-        {"hour": 20, "occupancyPercent": 65}
-      ]
-    },
-    "reviewsDistribution": {
-      "oneStar": 2,
-      "twoStar": 5,
-      "threeStar": 12,
-      "fourStar": 38,
-      "fiveStar": 41
-    }
-  },
-  {
-    "title": "Guardian Pharmacy",
-    "subTitle": "गार्डियन फार्मेसी",
-    "price": null,
-    "categoryName": "Pharmacy",
-    "address": "Jubilee Hills, Hyderabad, Telangana 500033",
-    "neighborhood": "Jubilee Hills",
-    "street": "Road No. 36",
-    "city": "Hyderabad",
-    "postalCode": "500033",
-    "state": "Telangana",
-    "countryCode": "IN",
-    "phone": "+91 40-2355-7890",
-    "phoneUnformatted": "+914023557890",
-    "claimThisBusiness": false,
-    "location": {
-      "lat": 17.4326,
-      "lng": 78.4071
-    },
-    "totalScore": 4.1,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": "ChIJFZ678901234",
-    "categories": ["Pharmacy", "Medical supply store"],
-    "reviewsCount": 67,
-    "imagesCount": 5,
-    "openingHours": [
-      {"day": "Monday", "hours": "8 AM to 10 PM"},
-      {"day": "Tuesday", "hours": "8 AM to 10 PM"},
-      {"day": "Wednesday", "hours": "8 AM to 10 PM"},
-      {"day": "Thursday", "hours": "8 AM to 10 PM"},
-      {"day": "Friday", "hours": "8 AM to 10 PM"},
-      {"day": "Saturday", "hours": "8 AM to 10 PM"},
-      {"day": "Sunday", "hours": "9 AM to 9 PM"}
-    ],
-    "additionalInfo": {
-      "Service options": [
-        {"Delivery": true},
-        {"Drive-through": false}
-      ],
-      "Accessibility": [
-        {"Wheelchair accessible parking lot": false}
-      ],
-      "Payments": [
-        {"Cash-only": true}
-      ]
-    },
-    "popularTimesHistogram": {
-      "Mo": [
-        {"hour": 8, "occupancyPercent": 40},
-        {"hour": 9, "occupancyPercent": 55},
-        {"hour": 10, "occupancyPercent": 65},
-        {"hour": 11, "occupancyPercent": 70},
-        {"hour": 12, "occupancyPercent": 65},
-        {"hour": 13, "occupancyPercent": 60},
-        {"hour": 14, "occupancyPercent": 50},
-        {"hour": 15, "occupancyPercent": 55},
-        {"hour": 16, "occupancyPercent": 65},
-        {"hour": 17, "occupancyPercent": 75},
-        {"hour": 18, "occupancyPercent": 85},
-        {"hour": 19, "occupancyPercent": 80},
-        {"hour": 20, "occupancyPercent": 70},
-        {"hour": 21, "occupancyPercent": 55}
-      ]
-    },
-    "reviewsDistribution": {
-      "oneStar": 5,
-      "twoStar": 8,
-      "threeStar": 15,
-      "fourStar": 25,
-      "fiveStar": 14
-    }
-  },
-  {
-    "title": "PharmEasy Store",
-    "subTitle": "फार्मईज़ी स्टोर",
-    "price": null,
-    "categoryName": "Drug store",
-    "address": "Whitefield, Bangalore, Karnataka 560066",
-    "neighborhood": "Whitefield",
-    "street": "ITPL Main Road",
-    "city": "Bangalore",
-    "postalCode": "560066",
-    "state": "Karnataka",
-    "countryCode": "IN",
-    "phone": "+91 80-6789-0123",
-    "phoneUnformatted": "+918067890123",
-    "claimThisBusiness": true,
-    "location": {
-      "lat": 12.9698,
-      "lng": 77.7499
-    },
-    "totalScore": 4.7,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": "ChIJGZ789012345",
-    "categories": ["Drug store"],
-    "reviewsCount": 428,
-    "imagesCount": 18,
-    "openingHours": [
-      {"day": "Monday", "hours": "Open 24 hours"},
-      {"day": "Tuesday", "hours": "Open 24 hours"},
-      {"day": "Wednesday", "hours": "Open 24 hours"},
-      {"day": "Thursday", "hours": "Open 24 hours"},
-      {"day": "Friday", "hours": "Open 24 hours"},
-      {"day": "Saturday", "hours": "Open 24 hours"},
-      {"day": "Sunday", "hours": "Open 24 hours"}
-    ],
-    "additionalInfo": {
-      "Service options": [
-        {"Delivery": true},
-        {"Drive-through": true}
-      ],
-      "Accessibility": [
-        {"Wheelchair accessible parking lot": true}
-      ],
-      "Payments": [
-        {"Credit cards": true},
-        {"UPI": true},
-        {"Digital payments": true}
-      ]
-    },
-    "popularTimesHistogram": {
-      "Mo": [
-        {"hour": 0, "occupancyPercent": 25},
-        {"hour": 1, "occupancyPercent": 15},
-        {"hour": 2, "occupancyPercent": 10},
-        {"hour": 3, "occupancyPercent": 8},
-        {"hour": 4, "occupancyPercent": 10},
-        {"hour": 5, "occupancyPercent": 15},
-        {"hour": 6, "occupancyPercent": 25},
-        {"hour": 7, "occupancyPercent": 40},
-        {"hour": 8, "occupancyPercent": 55},
-        {"hour": 9, "occupancyPercent": 70},
-        {"hour": 10, "occupancyPercent": 80},
-        {"hour": 11, "occupancyPercent": 85},
-        {"hour": 12, "occupancyPercent": 80},
-        {"hour": 13, "occupancyPercent": 75},
-        {"hour": 14, "occupancyPercent": 65},
-        {"hour": 15, "occupancyPercent": 70},
-        {"hour": 16, "occupancyPercent": 80},
-        {"hour": 17, "occupancyPercent": 90},
-        {"hour": 18, "occupancyPercent": 95},
-        {"hour": 19, "occupancyPercent": 90},
-        {"hour": 20, "occupancyPercent": 80},
-        {"hour": 21, "occupancyPercent": 65},
-        {"hour": 22, "occupancyPercent": 50},
-        {"hour": 23, "occupancyPercent": 35}
-      ],
-      "Tu": [
-        {"hour": 0, "occupancyPercent": 25},
-        {"hour": 1, "occupancyPercent": 15},
-        {"hour": 2, "occupancyPercent": 10},
-        {"hour": 3, "occupancyPercent": 8},
-        {"hour": 4, "occupancyPercent": 10},
-        {"hour": 5, "occupancyPercent": 15},
-        {"hour": 6, "occupancyPercent": 25},
-        {"hour": 7, "occupancyPercent": 40},
-        {"hour": 8, "occupancyPercent": 55},
-        {"hour": 9, "occupancyPercent": 70},
-        {"hour": 10, "occupancyPercent": 80},
-        {"hour": 11, "occupancyPercent": 85},
-        {"hour": 12, "occupancyPercent": 80},
-        {"hour": 13, "occupancyPercent": 75},
-        {"hour": 14, "occupancyPercent": 65},
-        {"hour": 15, "occupancyPercent": 70},
-        {"hour": 16, "occupancyPercent": 80},
-        {"hour": 17, "occupancyPercent": 90},
-        {"hour": 18, "occupancyPercent": 95},
-        {"hour": 19, "occupancyPercent": 90},
-        {"hour": 20, "occupancyPercent": 80},
-        {"hour": 21, "occupancyPercent": 65},
-        {"hour": 22, "occupancyPercent": 50},
-        {"hour": 23, "occupancyPercent": 35}
-      ]
-    },
-    "reviewsDistribution": {
-      "oneStar": 2,
-      "twoStar": 4,
-      "threeStar": 15,
-      "fourStar": 120,
-      "fiveStar": 287
-    }
-  },
-  {
-    "title": "Aarogya Medical Store",
-    "subTitle": "आरोग्य मेडिकल स्टोर",
-    "price": null,
+    "title": "Apollo Pharmacy - Delhi 99",
     "categoryName": "Medical supply store",
-    "address": "Civil Lines, Jaipur, Rajasthan 302006",
-    "neighborhood": "Civil Lines",
-    "street": "Station Road",
-    "city": "Jaipur",
-    "postalCode": "302006",
-    "state": "Rajasthan",
-    "countryCode": "IN",
-    "phone": "+91 141-234-5678",
-    "phoneUnformatted": "+911412345678",
-    "claimThisBusiness": false,
-    "location": {
-      "lat": 26.9124,
-      "lng": 75.7873
-    },
-    "totalScore": 3.9,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": "ChIJHZ890123456",
-    "categories": ["Medical supply store"],
-    "reviewsCount": 45,
-    "imagesCount": 3,
-    "openingHours": [
-      {"day": "Monday", "hours": "9 AM to 8 PM"},
-      {"day": "Tuesday", "hours": "9 AM to 8 PM"},
-      {"day": "Wednesday", "hours": "9 AM to 8 PM"},
-      {"day": "Thursday", "hours": "9 AM to 8 PM"},
-      {"day": "Friday", "hours": "9 AM to 8 PM"},
-      {"day": "Saturday", "hours": "9 AM to 8 PM"},
-      {"day": "Sunday", "hours": "Closed"}
-    ],
+    "city": "Delhi",
+    "state": "Delhi",
+    "totalScore": 4.3,
+    "reviewsCount": 195,
     "additionalInfo": {
       "Service options": [
-        {"Delivery": false},
-        {"Drive-through": false}
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
       ],
       "Accessibility": [
-        {"Wheelchair accessible parking lot": false}
-      ],
-      "Payments": [
-        {"Cash-only": true}
+        {
+          "Wheelchair accessible parking lot": true
+        }
       ]
     },
     "popularTimesHistogram": {
       "Mo": [
-        {"hour": 9, "occupancyPercent": 35},
-        {"hour": 10, "occupancyPercent": 50},
-        {"hour": 11, "occupancyPercent": 60},
-        {"hour": 12, "occupancyPercent": 65},
-        {"hour": 13, "occupancyPercent": 60},
-        {"hour": 14, "occupancyPercent": 50},
-        {"hour": 15, "occupancyPercent": 55},
-        {"hour": 16, "occupancyPercent": 65},
-        {"hour": 17, "occupancyPercent": 75},
-        {"hour": 18, "occupancyPercent": 70},
-        {"hour": 19, "occupancyPercent": 55}
+        {
+          "hour": 0,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 24
+        }
       ]
-    },
-    "reviewsDistribution": {
-      "oneStar": 8,
-      "twoStar": 10,
-      "threeStar": 12,
-      "fourStar": 10,
-      "fiveStar": 5
     }
   },
   {
-    "title": "1mg Healthcare Store",
-    "subTitle": "वनएमजी हेल्थकेयर स्टोर",
-    "price": null,
-    "categoryName": "Pharmacy",
-    "address": "Sector 18, Noida, Uttar Pradesh 201301",
-    "neighborhood": "Sector 18",
-    "street": "Atta Market",
-    "city": "Noida",
-    "postalCode": "201301",
-    "state": "Uttar Pradesh",
-    "countryCode": "IN",
-    "phone": "+91 120-456-7890",
-    "phoneUnformatted": "+911204567890",
-    "claimThisBusiness": true,
-    "location": {
-      "lat": 28.5355,
-      "lng": 77.3910
-    },
-    "totalScore": 4.5,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": "ChIJIZ901234567",
-    "categories": ["Pharmacy", "Health consultant"],
-    "reviewsCount": 234,
-    "imagesCount": 14,
-    "openingHours": [
-      {"day": "Monday", "hours": "8 AM to 11 PM"},
-      {"day": "Tuesday", "hours": "8 AM to 11 PM"},
-      {"day": "Wednesday", "hours": "8 AM to 11 PM"},
-      {"day": "Thursday", "hours": "8 AM to 11 PM"},
-      {"day": "Friday", "hours": "8 AM to 11 PM"},
-      {"day": "Saturday", "hours": "8 AM to 11 PM"},
-      {"day": "Sunday", "hours": "8 AM to 11 PM"}
-    ],
-    "additionalInfo": {
-      "Service options": [
-        {"Delivery": true},
-        {"Drive-through": false}
-      ],
-      "Accessibility": [
-        {"Wheelchair accessible parking lot": true}
-      ],
-      "Payments": [
-        {"Credit cards": true},
-        {"UPI": true},
-        {"Digital payments": true}
-      ]
-    },
-    "popularTimesHistogram": {
-      "Mo": [
-        {"hour": 8, "occupancyPercent": 45},
-        {"hour": 9, "occupancyPercent": 60},
-        {"hour": 10, "occupancyPercent": 75},
-        {"hour": 11, "occupancyPercent": 80},
-        {"hour": 12, "occupancyPercent": 75},
-        {"hour": 13, "occupancyPercent": 70},
-        {"hour": 14, "occupancyPercent": 60},
-        {"hour": 15, "occupancyPercent": 65},
-        {"hour": 16, "occupancyPercent": 75},
-        {"hour": 17, "occupancyPercent": 85},
-        {"hour": 18, "occupancyPercent": 90},
-        {"hour": 19, "occupancyPercent": 85},
-        {"hour": 20, "occupancyPercent": 75},
-        {"hour": 21, "occupancyPercent": 60},
-        {"hour": 22, "occupancyPercent": 45}
-      ]
-    },
-    "reviewsDistribution": {
-      "oneStar": 4,
-      "twoStar": 7,
-      "threeStar": 22,
-      "fourStar": 85,
-      "fiveStar": 116
-    }
-  },
-  {
-    "title": "Sanjeevani Homeopathy Clinic",
-    "subTitle": "संजीवनी होम्योपैथी क्लिनिक",
-    "price": null,
-    "categoryName": "Homeopathic pharmacy",
-    "address": "Gomti Nagar, Lucknow, Uttar Pradesh 226010",
-    "neighborhood": "Gomti Nagar",
-    "street": "Vipin Khand",
-    "city": "Lucknow",
-    "postalCode": "226010",
-    "state": "Uttar Pradesh",
-    "countryCode": "IN",
-    "phone": "+91 522-345-6789",
-    "phoneUnformatted": "+915223456789",
-    "claimThisBusiness": false,
-    "location": {
-      "lat": 26.8467,
-      "lng": 80.9462
-    },
+    "title": "Life Care - Chandigarh 81",
+    "categoryName": "Health and beauty shop",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
     "totalScore": 4.8,
-    "permanentlyClosed": false,
-    "temporarilyClosed": false,
-    "placeId": "ChIJJZ012345678",
-    "categories": ["Homeopathic pharmacy"],
-    "reviewsCount": 72,
-    "imagesCount": 7,
-    "openingHours": [
-      {"day": "Monday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
-      {"day": "Tuesday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
-      {"day": "Wednesday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
-      {"day": "Thursday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
-      {"day": "Friday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
-      {"day": "Saturday", "hours": "10 AM to 2 PM, 5 to 8 PM"},
-      {"day": "Sunday", "hours": "10 AM to 2 PM"}
-    ],
+    "reviewsCount": 348,
     "additionalInfo": {
       "Service options": [
-        {"Delivery": false},
-        {"Drive-through": false}
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
       ],
       "Accessibility": [
-        {"Wheelchair accessible parking lot": false}
-      ],
-      "Payments": [
-        {"Cash-only": true}
+        {
+          "Wheelchair accessible parking lot": false
+        }
       ]
     },
     "popularTimesHistogram": {
       "Mo": [
-        {"hour": 10, "occupancyPercent": 60},
-        {"hour": 11, "occupancyPercent": 75},
-        {"hour": 12, "occupancyPercent": 80},
-        {"hour": 13, "occupancyPercent": 70},
-        {"hour": 17, "occupancyPercent": 65},
-        {"hour": 18, "occupancyPercent": 85},
-        {"hour": 19, "occupancyPercent": 75}
+        {
+          "hour": 0,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 28
+        }
+      ]
+    }
+  },
+  {
+    "title": "Wellness Forever - Patna 39",
+    "categoryName": "Drug store",
+    "city": "Patna",
+    "state": "Bihar",
+    "totalScore": 3.6,
+    "reviewsCount": 412,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
       ]
     },
-    "reviewsDistribution": {
-      "oneStar": 1,
-      "twoStar": 2,
-      "threeStar": 5,
-      "fourStar": 18,
-      "fiveStar": 46
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 11
+        }
+      ]
+    }
+  },
+  {
+    "title": "Wellness Forever - Surat 65",
+    "categoryName": "Drug store",
+    "city": "Surat",
+    "state": "Gujarat",
+    "totalScore": 4.2,
+    "reviewsCount": 140,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 19
+        }
+      ]
+    }
+  },
+  {
+    "title": "MedPlus - Coimbatore 70",
+    "categoryName": "Medical supply store",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalScore": 4.4,
+    "reviewsCount": 68,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 10
+        }
+      ]
+    }
+  },
+  {
+    "title": "Apollo Pharmacy - Ahmedabad 50",
+    "categoryName": "Medical supply store",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "totalScore": 4.4,
+    "reviewsCount": 333,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 28
+        }
+      ]
+    }
+  },
+  {
+    "title": "Life Care - Nagpur 78",
+    "categoryName": "Medical supply store",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "totalScore": 3.6,
+    "reviewsCount": 115,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 22
+        }
+      ]
+    }
+  },
+  {
+    "title": "Wellness Forever - Lucknow 79",
+    "categoryName": "Medical supply store",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "totalScore": 4.7,
+    "reviewsCount": 362,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 15
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tulsi Pharmacy - Pune 16",
+    "categoryName": "Health and beauty shop",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "totalScore": 4.8,
+    "reviewsCount": 309,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 30
+        }
+      ]
+    }
+  },
+  {
+    "title": "MedPlus - Pune 23",
+    "categoryName": "Health and beauty shop",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "totalScore": 4.7,
+    "reviewsCount": 481,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 18
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Jaipur 23",
+    "categoryName": "Drug store",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "totalScore": 4,
+    "reviewsCount": 421,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 21
+        }
+      ]
+    }
+  },
+  {
+    "title": "Noble Plus - Chennai 61",
+    "categoryName": "Health and beauty shop",
+    "city": "Chennai",
+    "state": "Tamil Nadu",
+    "totalScore": 3.9,
+    "reviewsCount": 405,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 13
+        }
+      ]
+    }
+  },
+  {
+    "title": "Noble Plus - Mysore 45",
+    "categoryName": "Medical supply store",
+    "city": "Mysore",
+    "state": "Karnataka",
+    "totalScore": 4.4,
+    "reviewsCount": 90,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 16
+        }
+      ]
+    }
+  },
+  {
+    "title": "Sanjivani - Delhi 40",
+    "categoryName": "Drug store",
+    "city": "Delhi",
+    "state": "Delhi",
+    "totalScore": 3.9,
+    "reviewsCount": 125,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 11
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Jaipur 32",
+    "categoryName": "Health and beauty shop",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "totalScore": 4.2,
+    "reviewsCount": 77,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 9
+        }
+      ]
+    }
+  },
+  {
+    "title": "Wellness Forever - Indore 1",
+    "categoryName": "Health and beauty shop",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "totalScore": 4.8,
+    "reviewsCount": 156,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 6
+        }
+      ]
+    }
+  },
+  {
+    "title": "1mg Store - Jaipur 38",
+    "categoryName": "Medical supply store",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "totalScore": 3.9,
+    "reviewsCount": 190,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 23
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tulsi Pharmacy - Bhopal 18",
+    "categoryName": "Pharmacy",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "totalScore": 4.7,
+    "reviewsCount": 33,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 7
+        }
+      ]
+    }
+  },
+  {
+    "title": "98.4 Degree - Ahmedabad 91",
+    "categoryName": "Drug store",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "totalScore": 3.7,
+    "reviewsCount": 155,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 8
+        }
+      ]
+    }
+  },
+  {
+    "title": "Guardian Pharmacy - Pune 92",
+    "categoryName": "Pharmacy",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "totalScore": 3.7,
+    "reviewsCount": 388,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 6
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tulsi Pharmacy - Coimbatore 31",
+    "categoryName": "Drug store",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalScore": 3.9,
+    "reviewsCount": 289,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 23
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tulsi Pharmacy - Bangalore 2",
+    "categoryName": "Health and beauty shop",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "totalScore": 4.8,
+    "reviewsCount": 69,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 19
+        }
+      ]
+    }
+  },
+  {
+    "title": "MedPlus - Ahmedabad 22",
+    "categoryName": "Pharmacy",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "totalScore": 4.2,
+    "reviewsCount": 173,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 10
+        }
+      ]
+    }
+  },
+  {
+    "title": "Life Care - Coimbatore 12",
+    "categoryName": "Health and beauty shop",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalScore": 3.6,
+    "reviewsCount": 426,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 30
+        }
+      ]
+    }
+  },
+  {
+    "title": "Apollo Pharmacy - Chandigarh 20",
+    "categoryName": "Medical supply store",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "totalScore": 4.2,
+    "reviewsCount": 49,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 21
+        }
+      ]
+    }
+  },
+  {
+    "title": "MedPlus - Surat 72",
+    "categoryName": "Drug store",
+    "city": "Surat",
+    "state": "Gujarat",
+    "totalScore": 4,
+    "reviewsCount": 33,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 29
+        }
+      ]
+    }
+  },
+  {
+    "title": "1mg Store - Nagpur 15",
+    "categoryName": "Medical supply store",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "totalScore": 3.5,
+    "reviewsCount": 205,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 11
+        }
+      ]
+    }
+  },
+  {
+    "title": "Sanjivani - Jaipur 20",
+    "categoryName": "Pharmacy",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "totalScore": 3.8,
+    "reviewsCount": 484,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 7
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Patna 71",
+    "categoryName": "Drug store",
+    "city": "Patna",
+    "state": "Bihar",
+    "totalScore": 4.6,
+    "reviewsCount": 371,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 9
+        }
+      ]
+    }
+  },
+  {
+    "title": "Life Care - Indore 52",
+    "categoryName": "Health and beauty shop",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "totalScore": 4.5,
+    "reviewsCount": 400,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 16
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Surat 66",
+    "categoryName": "Health and beauty shop",
+    "city": "Surat",
+    "state": "Gujarat",
+    "totalScore": 4.1,
+    "reviewsCount": 380,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 6
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Mysore 53",
+    "categoryName": "Health and beauty shop",
+    "city": "Mysore",
+    "state": "Karnataka",
+    "totalScore": 4.1,
+    "reviewsCount": 458,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 27
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Kolkata 95",
+    "categoryName": "Health and beauty shop",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "totalScore": 3.7,
+    "reviewsCount": 290,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 28
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Patna 29",
+    "categoryName": "Pharmacy",
+    "city": "Patna",
+    "state": "Bihar",
+    "totalScore": 4.4,
+    "reviewsCount": 297,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 23
+        }
+      ]
+    }
+  },
+  {
+    "title": "98.4 Degree - Kochi 10",
+    "categoryName": "Drug store",
+    "city": "Kochi",
+    "state": "Kerala",
+    "totalScore": 4.1,
+    "reviewsCount": 11,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 30
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Delhi 68",
+    "categoryName": "Drug store",
+    "city": "Delhi",
+    "state": "Delhi",
+    "totalScore": 3.7,
+    "reviewsCount": 474,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 27
+        }
+      ]
+    }
+  },
+  {
+    "title": "Noble Plus - Bangalore 59",
+    "categoryName": "Health and beauty shop",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "totalScore": 4.3,
+    "reviewsCount": 444,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 21
+        }
+      ]
+    }
+  },
+  {
+    "title": "Noble Plus - Kolkata 48",
+    "categoryName": "Medical supply store",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "totalScore": 4.6,
+    "reviewsCount": 190,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 28
+        }
+      ]
+    }
+  },
+  {
+    "title": "Guardian Pharmacy - Surat 79",
+    "categoryName": "Medical supply store",
+    "city": "Surat",
+    "state": "Gujarat",
+    "totalScore": 3.7,
+    "reviewsCount": 156,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 10
+        }
+      ]
+    }
+  },
+  {
+    "title": "98.4 Degree - Mysore 38",
+    "categoryName": "Health and beauty shop",
+    "city": "Mysore",
+    "state": "Karnataka",
+    "totalScore": 4.8,
+    "reviewsCount": 174,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 17
+        }
+      ]
+    }
+  },
+  {
+    "title": "Wellness Forever - Kochi 42",
+    "categoryName": "Medical supply store",
+    "city": "Kochi",
+    "state": "Kerala",
+    "totalScore": 4,
+    "reviewsCount": 122,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 27
+        }
+      ]
+    }
+  },
+  {
+    "title": "1mg Store - Chandigarh 79",
+    "categoryName": "Pharmacy",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "totalScore": 4.5,
+    "reviewsCount": 82,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 13
+        }
+      ]
+    }
+  },
+  {
+    "title": "Sanjivani - Mysore 44",
+    "categoryName": "Health and beauty shop",
+    "city": "Mysore",
+    "state": "Karnataka",
+    "totalScore": 5,
+    "reviewsCount": 200,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 29
+        }
+      ]
+    }
+  },
+  {
+    "title": "Netmeds - Bhopal 20",
+    "categoryName": "Pharmacy",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "totalScore": 4.1,
+    "reviewsCount": 307,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 6
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Patna 96",
+    "categoryName": "Medical supply store",
+    "city": "Patna",
+    "state": "Bihar",
+    "totalScore": 4,
+    "reviewsCount": 479,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 26
+        }
+      ]
+    }
+  },
+  {
+    "title": "Sanjivani - Patna 63",
+    "categoryName": "Pharmacy",
+    "city": "Patna",
+    "state": "Bihar",
+    "totalScore": 3.8,
+    "reviewsCount": 472,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 8
+        }
+      ]
+    }
+  },
+  {
+    "title": "Apollo Pharmacy - Patna 27",
+    "categoryName": "Drug store",
+    "city": "Patna",
+    "state": "Bihar",
+    "totalScore": 4.2,
+    "reviewsCount": 76,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 14
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Pune 7",
+    "categoryName": "Medical supply store",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "totalScore": 4.4,
+    "reviewsCount": 234,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 6
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Jaipur 40",
+    "categoryName": "Drug store",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "totalScore": 4.8,
+    "reviewsCount": 427,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 29
+        }
+      ]
+    }
+  },
+  {
+    "title": "MedPlus - Jaipur 1",
+    "categoryName": "Health and beauty shop",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "totalScore": 4.6,
+    "reviewsCount": 86,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 23
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tulsi Pharmacy - Bangalore 76",
+    "categoryName": "Medical supply store",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "totalScore": 3.8,
+    "reviewsCount": 57,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 9
+        }
+      ]
+    }
+  },
+  {
+    "title": "1mg Store - Coimbatore 74",
+    "categoryName": "Pharmacy",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalScore": 3.9,
+    "reviewsCount": 500,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 23
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Delhi 8",
+    "categoryName": "Medical supply store",
+    "city": "Delhi",
+    "state": "Delhi",
+    "totalScore": 4.3,
+    "reviewsCount": 461,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 17
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Kolkata 30",
+    "categoryName": "Drug store",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "totalScore": 3.9,
+    "reviewsCount": 292,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 16
+        }
+      ]
+    }
+  },
+  {
+    "title": "Sanjivani - Chandigarh 96",
+    "categoryName": "Health and beauty shop",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "totalScore": 3.5,
+    "reviewsCount": 329,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 29
+        }
+      ]
+    }
+  },
+  {
+    "title": "Noble Plus - Kochi 87",
+    "categoryName": "Drug store",
+    "city": "Kochi",
+    "state": "Kerala",
+    "totalScore": 3.7,
+    "reviewsCount": 83,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 29
+        }
+      ]
+    }
+  },
+  {
+    "title": "Life Care - Delhi 89",
+    "categoryName": "Pharmacy",
+    "city": "Delhi",
+    "state": "Delhi",
+    "totalScore": 4.8,
+    "reviewsCount": 469,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 16
+        }
+      ]
+    }
+  },
+  {
+    "title": "1mg Store - Kochi 16",
+    "categoryName": "Health and beauty shop",
+    "city": "Kochi",
+    "state": "Kerala",
+    "totalScore": 4.1,
+    "reviewsCount": 484,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 11
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Kanpur 34",
+    "categoryName": "Health and beauty shop",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "totalScore": 3.9,
+    "reviewsCount": 201,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 16
+        }
+      ]
+    }
+  },
+  {
+    "title": "Life Care - Hyderabad 37",
+    "categoryName": "Pharmacy",
+    "city": "Hyderabad",
+    "state": "Telangana",
+    "totalScore": 4,
+    "reviewsCount": 13,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 11
+        }
+      ]
+    }
+  },
+  {
+    "title": "98.4 Degree - Kolkata 89",
+    "categoryName": "Medical supply store",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "totalScore": 4.6,
+    "reviewsCount": 267,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 13
+        }
+      ]
+    }
+  },
+  {
+    "title": "98.4 Degree - Indore 72",
+    "categoryName": "Health and beauty shop",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "totalScore": 3.7,
+    "reviewsCount": 427,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 14
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Patna 94",
+    "categoryName": "Health and beauty shop",
+    "city": "Patna",
+    "state": "Bihar",
+    "totalScore": 3.9,
+    "reviewsCount": 121,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 15
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Coimbatore 33",
+    "categoryName": "Pharmacy",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalScore": 5,
+    "reviewsCount": 287,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 15
+        }
+      ]
+    }
+  },
+  {
+    "title": "Netmeds - Mysore 78",
+    "categoryName": "Drug store",
+    "city": "Mysore",
+    "state": "Karnataka",
+    "totalScore": 4.1,
+    "reviewsCount": 106,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 18
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Coimbatore 74",
+    "categoryName": "Drug store",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalScore": 3.9,
+    "reviewsCount": 28,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 15
+        }
+      ]
+    }
+  },
+  {
+    "title": "Apollo Pharmacy - Mysore 70",
+    "categoryName": "Health and beauty shop",
+    "city": "Mysore",
+    "state": "Karnataka",
+    "totalScore": 4.1,
+    "reviewsCount": 225,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 19
+        }
+      ]
+    }
+  },
+  {
+    "title": "1mg Store - Kochi 74",
+    "categoryName": "Health and beauty shop",
+    "city": "Kochi",
+    "state": "Kerala",
+    "totalScore": 3.9,
+    "reviewsCount": 123,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 84
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 9
+        }
+      ]
+    }
+  },
+  {
+    "title": "98.4 Degree - Kochi 97",
+    "categoryName": "Drug store",
+    "city": "Kochi",
+    "state": "Kerala",
+    "totalScore": 4.6,
+    "reviewsCount": 264,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 16
+        }
+      ]
+    }
+  },
+  {
+    "title": "Netmeds - Patna 15",
+    "categoryName": "Drug store",
+    "city": "Patna",
+    "state": "Bihar",
+    "totalScore": 4.4,
+    "reviewsCount": 285,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 19
+        }
+      ]
+    }
+  },
+  {
+    "title": "Life Care - Indore 73",
+    "categoryName": "Medical supply store",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "totalScore": 4.5,
+    "reviewsCount": 393,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 18
+        }
+      ]
+    }
+  },
+  {
+    "title": "Wellness Forever - Ahmedabad 4",
+    "categoryName": "Medical supply store",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "totalScore": 3.7,
+    "reviewsCount": 441,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 10
+        }
+      ]
+    }
+  },
+  {
+    "title": "Noble Plus - Jaipur 6",
+    "categoryName": "Medical supply store",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "totalScore": 3.8,
+    "reviewsCount": 239,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 8
+        }
+      ]
+    }
+  },
+  {
+    "title": "Sanjivani - Coimbatore 97",
+    "categoryName": "Health and beauty shop",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalScore": 4.6,
+    "reviewsCount": 179,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 17
+        }
+      ]
+    }
+  },
+  {
+    "title": "Wellness Forever - Jaipur 70",
+    "categoryName": "Drug store",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "totalScore": 4.4,
+    "reviewsCount": 330,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 5
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Kanpur 48",
+    "categoryName": "Drug store",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "totalScore": 4.7,
+    "reviewsCount": 199,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 17
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Mysore 84",
+    "categoryName": "Health and beauty shop",
+    "city": "Mysore",
+    "state": "Karnataka",
+    "totalScore": 4.2,
+    "reviewsCount": 186,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 6
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tulsi Pharmacy - Mumbai 96",
+    "categoryName": "Medical supply store",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "totalScore": 4.8,
+    "reviewsCount": 131,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 20
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tulsi Pharmacy - Kanpur 65",
+    "categoryName": "Drug store",
+    "city": "Kanpur",
+    "state": "Uttar Pradesh",
+    "totalScore": 4.9,
+    "reviewsCount": 215,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 28
+        }
+      ]
+    }
+  },
+  {
+    "title": "1mg Store - Patna 30",
+    "categoryName": "Health and beauty shop",
+    "city": "Patna",
+    "state": "Bihar",
+    "totalScore": 5,
+    "reviewsCount": 59,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 24
+        }
+      ]
+    }
+  },
+  {
+    "title": "Sanjivani - Ahmedabad 45",
+    "categoryName": "Health and beauty shop",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "totalScore": 4.2,
+    "reviewsCount": 382,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 30
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Chandigarh 18",
+    "categoryName": "Health and beauty shop",
+    "city": "Chandigarh",
+    "state": "Chandigarh",
+    "totalScore": 4.7,
+    "reviewsCount": 266,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 14
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tulsi Pharmacy - Indore 45",
+    "categoryName": "Drug store",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "totalScore": 3.8,
+    "reviewsCount": 447,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 22
+        }
+      ]
+    }
+  },
+  {
+    "title": "Sanjivani - Ahmedabad 10",
+    "categoryName": "Health and beauty shop",
+    "city": "Ahmedabad",
+    "state": "Gujarat",
+    "totalScore": 4.9,
+    "reviewsCount": 11,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 19
+        }
+      ]
+    }
+  },
+  {
+    "title": "Tulsi Pharmacy - Coimbatore 91",
+    "categoryName": "Medical supply store",
+    "city": "Coimbatore",
+    "state": "Tamil Nadu",
+    "totalScore": 4.7,
+    "reviewsCount": 373,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 29
+        }
+      ]
+    }
+  },
+  {
+    "title": "Religare Wellness - Kolkata 26",
+    "categoryName": "Health and beauty shop",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "totalScore": 4.3,
+    "reviewsCount": 158,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 14
+        }
+      ]
+    }
+  },
+  {
+    "title": "Apollo Pharmacy - Pune 68",
+    "categoryName": "Medical supply store",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "totalScore": 4.2,
+    "reviewsCount": 396,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 23
+        }
+      ]
+    }
+  },
+  {
+    "title": "Sanjivani - Nagpur 72",
+    "categoryName": "Drug store",
+    "city": "Nagpur",
+    "state": "Maharashtra",
+    "totalScore": 5,
+    "reviewsCount": 165,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 50
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 13
+        }
+      ]
+    }
+  },
+  {
+    "title": "Netmeds - Kochi 7",
+    "categoryName": "Medical supply store",
+    "city": "Kochi",
+    "state": "Kerala",
+    "totalScore": 4.4,
+    "reviewsCount": 311,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 68
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 9
+        }
+      ]
+    }
+  },
+  {
+    "title": "1mg Store - Surat 86",
+    "categoryName": "Drug store",
+    "city": "Surat",
+    "state": "Gujarat",
+    "totalScore": 4.4,
+    "reviewsCount": 221,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 7
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Pune 15",
+    "categoryName": "Health and beauty shop",
+    "city": "Pune",
+    "state": "Maharashtra",
+    "totalScore": 4.7,
+    "reviewsCount": 282,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 9
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 7
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 42
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 48
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 27
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 27
+        }
+      ]
+    }
+  },
+  {
+    "title": "Netmeds - Lucknow 99",
+    "categoryName": "Medical supply store",
+    "city": "Lucknow",
+    "state": "Uttar Pradesh",
+    "totalScore": 4.3,
+    "reviewsCount": 109,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 12
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 40
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 65
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 5
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 8
+        }
+      ]
+    }
+  },
+  {
+    "title": "Guardian Pharmacy - Kolkata 71",
+    "categoryName": "Health and beauty shop",
+    "city": "Kolkata",
+    "state": "West Bengal",
+    "totalScore": 4,
+    "reviewsCount": 446,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 22
+        }
+      ]
+    }
+  },
+  {
+    "title": "98.4 Degree - Surat 63",
+    "categoryName": "Health and beauty shop",
+    "city": "Surat",
+    "state": "Gujarat",
+    "totalScore": 4.6,
+    "reviewsCount": 445,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 47
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 83
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 67
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 26
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Bangalore 26",
+    "categoryName": "Medical supply store",
+    "city": "Bangalore",
+    "state": "Karnataka",
+    "totalScore": 3.5,
+    "reviewsCount": 480,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 25
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 18
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 8
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 58
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 93
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 80
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 95
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 56
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 20
+        }
+      ]
+    }
+  },
+  {
+    "title": "Noble Plus - Mumbai 34",
+    "categoryName": "Drug store",
+    "city": "Mumbai",
+    "state": "Maharashtra",
+    "totalScore": 3.5,
+    "reviewsCount": 294,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 54
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 79
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 46
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 77
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 51
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 57
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 53
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 30
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Delhi 33",
+    "categoryName": "Pharmacy",
+    "city": "Delhi",
+    "state": "Delhi",
+    "totalScore": 3.7,
+    "reviewsCount": 292,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": true
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 11
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 14
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 71
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 73
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 81
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 61
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 52
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 30
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 5
+        }
+      ]
+    }
+  },
+  {
+    "title": "Wellness Forever - Kochi 48",
+    "categoryName": "Medical supply store",
+    "city": "Kochi",
+    "state": "Kerala",
+    "totalScore": 3.7,
+    "reviewsCount": 187,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 75
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 91
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 85
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 94
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 41
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 89
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 29
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 20
+        }
+      ]
+    }
+  },
+  {
+    "title": "Frank Ross Pharmacy - Jaipur 88",
+    "categoryName": "Drug store",
+    "city": "Jaipur",
+    "state": "Rajasthan",
+    "totalScore": 4.3,
+    "reviewsCount": 194,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": true
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": true
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 20
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 24
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 15
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 28
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 21
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 26
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 76
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 86
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 55
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 49
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 70
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 63
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 74
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 82
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 72
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 78
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 60
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 27
+        }
+      ]
+    }
+  },
+  {
+    "title": "Guardian Pharmacy - Bhopal 93",
+    "categoryName": "Health and beauty shop",
+    "city": "Bhopal",
+    "state": "Madhya Pradesh",
+    "totalScore": 4.4,
+    "reviewsCount": 51,
+    "additionalInfo": {
+      "Service options": [
+        {
+          "Delivery": false
+        },
+        {
+          "Drive-through": false
+        }
+      ],
+      "Accessibility": [
+        {
+          "Wheelchair accessible parking lot": false
+        }
+      ]
+    },
+    "popularTimesHistogram": {
+      "Mo": [
+        {
+          "hour": 0,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 1,
+          "occupancyPercent": 16
+        },
+        {
+          "hour": 2,
+          "occupancyPercent": 19
+        },
+        {
+          "hour": 3,
+          "occupancyPercent": 17
+        },
+        {
+          "hour": 4,
+          "occupancyPercent": 6
+        },
+        {
+          "hour": 5,
+          "occupancyPercent": 13
+        },
+        {
+          "hour": 6,
+          "occupancyPercent": 23
+        },
+        {
+          "hour": 7,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 8,
+          "occupancyPercent": 10
+        },
+        {
+          "hour": 9,
+          "occupancyPercent": 69
+        },
+        {
+          "hour": 10,
+          "occupancyPercent": 45
+        },
+        {
+          "hour": 11,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 12,
+          "occupancyPercent": 92
+        },
+        {
+          "hour": 13,
+          "occupancyPercent": 44
+        },
+        {
+          "hour": 14,
+          "occupancyPercent": 43
+        },
+        {
+          "hour": 15,
+          "occupancyPercent": 62
+        },
+        {
+          "hour": 16,
+          "occupancyPercent": 64
+        },
+        {
+          "hour": 17,
+          "occupancyPercent": 88
+        },
+        {
+          "hour": 18,
+          "occupancyPercent": 59
+        },
+        {
+          "hour": 19,
+          "occupancyPercent": 87
+        },
+        {
+          "hour": 20,
+          "occupancyPercent": 66
+        },
+        {
+          "hour": 21,
+          "occupancyPercent": 90
+        },
+        {
+          "hour": 22,
+          "occupancyPercent": 22
+        },
+        {
+          "hour": 23,
+          "occupancyPercent": 6
+        }
+      ]
     }
   }
 ];
